@@ -49,7 +49,7 @@ window.Warmup = {
       Description: values of all of the input fields of type text
       Outcome: Joe, Example
     */
-    showValuesForSelector("#text-field-button", 'form input[type=text]').val();
+    showValuesForSelector("#text-field-button", 'form :text').val();
 
   }
 
