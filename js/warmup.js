@@ -37,19 +37,19 @@ window.Warmup = {
       Description: show the names of the people under Isaiah
       Outcome: Della, Lurline, Aaliyah, Elisa, Joel
     */
-    showNamesForSelector("#under-isaiah-button", "#root > li > 'Izaiah' > ul > li").children();
+    showNamesForSelector("#under-isaiah-button", "#root > li:first > ul");
 
     /*
       Description: show the names of the people under Eulalia
       Outcome: Claude, Lowell
     */
-    showNamesForSelector("#under-eulalia-button", '#root > li > span#vp > ul > li').children();
+    showNamesForSelector("#under-eulalia-button", '#root > li:last > ul');
 
     /*
       Description: values of all of the input fields of type text
       Outcome: Joe, Example
     */
-    showValuesForSelector("#text-field-button", ':text');
+    showValuesForSelector("#text-field-button", 'input[type=text]').val();
 
   }
 
