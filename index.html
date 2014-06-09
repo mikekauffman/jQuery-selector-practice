@@ -1,62 +1,62 @@
 <!doctype html>
 <html>
 <head>
-<style>
-  label {
-    display: block;
-  }
-</style>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 <h2>DOM</h2>
 
 <ul id="root">
-  <li>
-    <span data-employment="full-time">Izaiah</span>
-    <ul>
-      <li>
-        <span>Joel</span>
+    <li>
+        <span data-employment="full-time">Izaiah</span>
         <ul>
-          <li><span data-employment="full-time">Della</span></li>
-          <li><span class="talkative">Lurline</span></li>
+            <li>
+                <span>Joel</span>
+                <ul>
+                    <li><span data-employment="full-time">Della</span></li>
+                    <li><span class="talkative">Lurline</span></li>
+                </ul>
+            </li>
+            <li>
+                <span>Aaliyah</span>
+                <ul>
+                    <li><span>Elisa</span></li>
+                </ul>
+            </li>
         </ul>
-      </li>
-      <li>
-        <span>Aaliyah</span>
+    </li>
+    <li>
+        <span id="vp">Eulalia</span>
         <ul>
-          <li><span>Elisa</span></li>
+            <li>
+                <span class="talkative">Claude</span>
+                <ul>
+                    <li><span data-employment="full-time">Lowell</span></li>
+                </ul>
+            </li>
         </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <span id="vp">Eulalia</span>
-    <ul>
-      <li>
-        <span class="talkative">Claude</span>
-        <ul>
-          <li><span data-employment="full-time">Lowell</span></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+    </li>
 </ul>
 
 <form>
-  <label>
-    First Name:
-    <input type="text" name="first_name" value="Joe"><br/>
-  </label>
+    <label>
+        First Name:
+        <input type="text" name="first_name" value="Joe"><br/>
+    </label>
 
-  <label>
-    Last Name:
-    <input type="text" name="last_name" value="Example"><br/>
-  </label>
+    <label>
+        Last Name:
+        <input type="text" name="last_name" value="Example"><br/>
+    </label>
 
-  <label>
-    <input type="checkbox" value="42">
-    Answer to The Ultimate Question of Life, the Universe, and Everything
-  </label>
+    <label>
+        <input type="checkbox" value="42">
+        Answer to The Ultimate Question of Life, the Universe, and Everything
+    </label>
 </form>
 
 <div class="replace-me" style="display: none;">Not Implemented!!</div>
@@ -66,6 +66,7 @@
 <button id="second-level-button">Second-Level Names</button>
 <button id="full-time-button">Full-Time</button>
 <button id="talkative-button">Talkative</button>
+<button id="vp-button">VP</button>
 <button id="under-isaiah-button">Under Isaiah</button>
 <button id="under-eulalia-button">Under Eulalia</button>
 <button id="text-field-button">Text Fields</button>
@@ -76,9 +77,9 @@
 <script src="js/plumbing.js"></script>
 <script src="js/warmup.js"></script>
 <script>
-  $(document).ready(function () {
-    Warmup.initialize();
-  });
+    $(document).ready(function () {
+        Warmup.initialize();
+    });
 </script>
 
 </body>
